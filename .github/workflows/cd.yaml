@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          cd ./app1
+          cd ./app
           docker build -t ${{ env.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }} .
 
       - name: Push Docker image
